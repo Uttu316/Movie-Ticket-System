@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 255);
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  margin-bottom: 40px;
+}
+
+nav ul {
+  width: 50%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.movie-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.movie-img-wrapper {
+  height: 300px;
+  width: 200px;
+}
+.v-none {
+  display: none;
+}
+#booker {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#booker-grid-holder {
+  display: flex;
+  width: 60vw;
+  margin: 2rem auto;
+  justify-content: space-around;
+  gap: 20px;
+}
+.booking-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 80px);
+  grid-template-columns: repeat(4, 80px);
+  gap: 10px;
+}
+.booking-grid div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.available-seat {
+  background-color: green;
+  cursor: pointer;
+}
+
+.unavailable-seat {
+  background-color: red;
+  cursor: no-drop;
+}
+.selected-seat {
+  border: 4px outset rgb(0, 0, 0);
+}
+
+#customer-detail-form {
+  margin-top: 20px;
+
+}
+#customer-detail-form div{
+  margin-bottom: 10px;
+}
